@@ -1,4 +1,4 @@
-raw_date = input("enter the date in dd-mm-yyyy format")
+raw_date = input("enter the date in \"dd-mm-yyyy\" format")
 
 raw_date = raw_date.split("-")
 
