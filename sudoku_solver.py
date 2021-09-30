@@ -23,13 +23,13 @@ def next_empty(puzzle):
 def sudoku_solver(puzzle):
     row,col = next_empty(puzzle)
     if row == -1:
-        return true
+        return True
     for guess in range(1,10):
         if isvalid(puzzle,guess,row,col):
-            puzzle[row][col] == guess
+            puzzle[row][col] = guess
             if sudoku_solver(puzzle):
                 return True,puzzle
-    puzzle[row][col] == 0
+    puzzle[row][col] = 0
     return False
     
 puzzle = [[4,0,0,0,0,8,0,0,0],[0,0,0,0,9,1,0,8,0],[0,8,6,5,0,2,0,3,0],[0,2,0,4,0,0,9,0,0],[0,1,0,2,0,0,0,0,6],[3,6,7,0,5,9,0,0,0],[0,0,0,0,0,5,0,0,0],[7,0,0,8,0,0,0,2,4],[2,0,0,9,3,0,0,7,0]]
