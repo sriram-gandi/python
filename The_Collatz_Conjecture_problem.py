@@ -1,6 +1,6 @@
 #https://www.youtube.com/watch?v=094y1Z2wpJg&ab_channel=Veritasium
 #The Collatz Conjecture is a look simple problem which ends up with a loop 4,2,1 for any number
-
+#Try it of your own
 a = int(input("enter a value"))
 li = [a]
 while True:
