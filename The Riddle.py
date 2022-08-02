@@ -1,4 +1,11 @@
 #https://www.youtube.com/watch?v=iSNsgj1OCLA&ab_channel=Veritasium
+#The Riddle That Seems Impossible Even If You Know The Answer 
+#I implemented the riddle and the solution in python and find its accuracy
+#The riddle contains a set of numbers from 1-100 arranged randomly for which i used the random module
+#The riddle will be explained in the youtube link above 
+#I got accuracy of one out of ten trails as the solution promises the best accuracy ever for that problem
+#Try it by your self
+
 from random import randint as ran
 li = []
 while len(li)<=99:
